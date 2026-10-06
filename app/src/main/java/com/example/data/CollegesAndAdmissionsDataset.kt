@@ -1,0 +1,172 @@
+package com.example.data
+
+import com.example.model.OpportunityCategory
+import com.example.model.OpportunityItem
+import com.example.model.OpportunityStatus
+
+object CollegesAndAdmissionsDataset {
+
+    fun getItems(): List<OpportunityItem> = listOf(
+        // ==================== COLLEGES ====================
+        OpportunityItem(
+            id = "col_vjti_mumbai",
+            title = "Veermata Jijabai Technological Institute (VJTI), Mumbai",
+            titleMr = "वीरमाता जिजाबाई तंत्रज्ञान संस्था (VJTI), मुंबई",
+            category = OpportunityCategory.COLLEGE,
+            subCategory = "Engineering College (Govt)",
+            description = "Established in 1887, VJTI Mumbai is one of India's premier autonomous government-aided technical universities with top campus placements.",
+            descriptionMr = "महाराष्ट्रातील अग्रगण्य सरकारी अनुदानित स्वायत्त तंत्रज्ञान संस्था (स्थापना १८८७). कॉम्प्युटर, आयटी, मेकॅनिकल आणि इलेक्ट्रॉनिक्स शाखांमध्ये उत्कृष्ट प्लेसमेंट.",
+            qualification = "MHT-CET / JEE Main (Merit based)",
+            qualificationMr = "MHT-CET / JEE मेन",
+            eligibility = "High MHT-CET percentile (98.5+ percentile for CSE/IT).",
+            eligibilityMr = "MHT-CET मध्ये सर्वोच्च गुणवत्ता.",
+            location = "माटुंगा, मुंबई, महाराष्ट्र",
+            fees = "₹85,000 प्रति वर्ष (MahaDBT सवलत लागू)",
+            officialUrl = "https://vjti.ac.in/",
+            status = OpportunityStatus.ACTIVE,
+            careerPaths = listOf("Avg Placement: ₹12.8 LPA", "Highest: ₹54 LPA", "Top Recruiters: Google, Morgan Stanley, Texas Instruments"),
+            tags = listOf("VJTI", "Mumbai", "Govt Engg", "Top Placement", "Engineering")
+        ),
+        OpportunityItem(
+            id = "col_glc_mumbai",
+            title = "Government Law College (GLC), Mumbai",
+            titleMr = "शासकीय विधी महाविद्यालय (GLC), मुंबई",
+            category = OpportunityCategory.COLLEGE,
+            subCategory = "Law College (Govt)",
+            description = "Oldest law school in Asia (Est. 1855). Alma mater of Dr. B.R. Ambedkar, Bal Gangadhar Tilak and numerous Chief Justices of India.",
+            descriptionMr = "आशियातील सर्वात जुने आणि विधी क्षेत्रातील अत्यंत नामांकित सरकारी लॉ कॉलेज (स्थापना १८५५). भारतरत्न डॉ. बाबासाहेब आंबेडकर व लोकमान्य टिळकांचे कॉलेज.",
+            qualification = "MAH-LL.B. CET (5-Year / 3-Year)",
+            qualificationMr = "महाराष्ट्र राज्य लॉ सीईटी (CET) गुणवत्ता यादी",
+            eligibility = "Top ranks in MAH-LL.B. CET.",
+            eligibilityMr = "लॉ सीईटी परीक्षेत उच्च पर्सेंटाईल.",
+            location = "चर्चगेट, मुंबई, महाराष्ट्र",
+            fees = "₹8,000 - ₹12,000 प्रति वर्ष (शासकीय नाममात्र फी)",
+            officialUrl = "https://glcmumbai.com/",
+            status = OpportunityStatus.ACTIVE,
+            careerPaths = listOf("Supreme Court & High Court Advocates", "Judicial Magistrates (JMFC)", "Corporate Legal Counsels"),
+            tags = listOf("GLC Mumbai", "Law", "LLB", "Govt College", "Ambedkar")
+        ),
+        OpportunityItem(
+            id = "col_bjmc_pune",
+            title = "B.J. Government Medical College & Sassoon General Hospital, Pune",
+            titleMr = "बी.जे. शासकीय वैद्यकीय महाविद्यालय व ससून सर्वोपचार रुग्णालय, पुणे",
+            category = OpportunityCategory.COLLEGE,
+            subCategory = "Medical College (Govt)",
+            description = "Premier government medical college in Pune with a 1300-bed teaching hospital providing extensive clinical bedside surgery exposure.",
+            descriptionMr = "पुण्यातील अग्रगण्य शासकीय वैद्यकीय महाविद्यालय. ससून रुग्णालयाच्या माध्यमातून विद्यार्थ्यांना सर्व प्रकारच्या रुग्णांवर प्रत्यक्ष उपचाराचा दांडगा अनुभव.",
+            qualification = "NEET-UG Top Ranks",
+            qualificationMr = "NEET-UG राष्ट्रीय गुणवत्ता",
+            eligibility = "NEET-UG state merit allotment via State CET Cell.",
+            eligibilityMr = "NEET-UG गुणवत्ता यादीनुसार शासकीय कोट्यातून प्रवेश.",
+            location = "पुणे स्टेशन जवळ, पुणे, महाराष्ट्र",
+            fees = "₹1,15,000 प्रति वर्ष (शासकीय दर)",
+            officialUrl = "https://bjmcpune.org/",
+            status = OpportunityStatus.ACTIVE,
+            tags = listOf("BJMC", "Pune", "Medical College", "MBBS", "Sassoon")
+        ),
+        OpportunityItem(
+            id = "col_ihm_mumbai",
+            title = "Institute of Hotel Management (IHM Mumbai - Dadar)",
+            titleMr = "इन्स्टिट्यूट ऑफ हॉटेल मॅनेजमेंट (IHM मुंबई - दादर)",
+            category = OpportunityCategory.COLLEGE,
+            subCategory = "Hotel Management (Govt)",
+            description = "Premier central government institute under Ministry of Tourism (Est. 1954) ranked India's top hospitality institution.",
+            descriptionMr = "पर्यटन मंत्रालय, भारत सरकार अंतर्गत देशातील क्रमांक १ चे शासकीय हॉटेल मॅनेजमेंट कॉलेज. ताज, ओबेरॉय आणि जागतिक क्रूझ कंपन्यांमध्ये १००% कॅम्पस प्लेसमेंट.",
+            qualification = "NCHMCT JEE Entrance Examination",
+            qualificationMr = "NCHMCT JEE राष्ट्रीय सामाईक प्रवेश परीक्षा",
+            eligibility = "12th standard pass in any stream with English as a subject.",
+            eligibilityMr = "१२ वी कोणत्याही शाखेतून उत्तीर्ण (इंग्रजी अनिवार्य).",
+            location = "दादर (पश्चिम), मुंबई, महाराष्ट्र",
+            fees = "₹1,20,000 - ₹1,45,000 प्रति वर्ष",
+            officialUrl = "https://ihmctan.edu/",
+            status = OpportunityStatus.ACTIVE,
+            tags = listOf("IHM Mumbai", "Hotel Management", "Chef", "Dadar", "Govt Institute")
+        ),
+        OpportunityItem(
+            id = "col_cummins_pune",
+            title = "MKSSS Cummins College of Engineering for Women, Pune",
+            titleMr = "कमिन्र्स महिला अभियांत्रिकी महाविद्यालय, पुणे (Cummins College)",
+            category = OpportunityCategory.COLLEGE,
+            subCategory = "Engineering College (Private Autonomous)",
+            description = "India's first all-women engineering institution established by Maharshi Karve Stree Shikshan Samstha known for outstanding placement in global tech firms.",
+            descriptionMr = "भारतातील महिलांसाठीचे पहिले आणि आघाडीचे स्वायत्त अभियांत्रिकी महाविद्यालय. मुलींसाठी सुरक्षित कॅम्पस आणि मायक्रोसॉफ्ट, ॲमेझॉन, सिस्को आदींमध्ये भरघोस प्लेसमेंट.",
+            qualification = "MHT-CET / JEE Main score",
+            qualificationMr = "MHT-CET / JEE मेन परीक्षा (केवळ विद्यार्थिनींसाठी)",
+            eligibility = "State CET Cell CAP rounds allotment for female candidates.",
+            eligibilityMr = "राज्य सीईटी सेल कॅप फेऱ्यांमधून प्रवेश.",
+            location = "कर्वेनगर, पुणे, महाराष्ट्र",
+            fees = "₹1,80,000 प्रति वर्ष (MahaDBT सवलत लागू)",
+            officialUrl = "https://cumminscollege.org/",
+            status = OpportunityStatus.ACTIVE,
+            tags = listOf("Cummins", "Women College", "Pune", "Engineering", "Placement")
+        ),
+
+        // ==================== ADMISSIONS 2026-27 ====================
+        OpportunityItem(
+            id = "adm_mht_cet_engg",
+            title = "MHT-CET 2026 Engineering (B.E./B.Tech) Centralized Admission (CAP)",
+            titleMr = "इंजिनिअरिंग पदवी केंद्रीय प्रवेश प्रक्रिया २०२६-२७ (MHT-CET CAP Rounds)",
+            category = OpportunityCategory.ADMISSION,
+            subCategory = "Engineering Admission",
+            description = "State CET Cell centralized admission rounds (CAP 1, 2, 3) for all Govt and Private Engineering colleges across Maharashtra.",
+            descriptionMr = "महाराष्ट्रातील सर्व शासकीय व खाजगी अभियांत्रिकी महाविद्यालयांमध्ये प्रथम वर्ष बी.ई./बी.टेक. प्रवेशासाठी राज्य सीईटी सेलची अधिकृत केंद्रीभूत प्रक्रिया.",
+            qualification = "12th Science (PCM) with MHT-CET Scorecard",
+            qualificationMr = "१२ वी सायन्स (PCM) + MHT-CET निकाल",
+            eligibility = "Minimum 45% in PCM in 12th standard (40% for reserved categories). Valid score in MHT-CET 2026.",
+            eligibilityMr = "१२ वी PCM मध्ये किमान ४५% (राखीव ४०%) + MHT-CET परीक्षा.",
+            lastDate = "सीईटी निकालानंतर कॅप वेळापत्रक प्रसिद्ध होईल",
+            officialUrl = "https://cetcell.mahacet.org/",
+            status = OpportunityStatus.NEW,
+            syllabus = "टप्पे: ऑनलाईन नोंदणी → कागदपत्र पडताळणी → प्रोव्हिजनल गुणवत्ता यादी → ऑप्शन फॉर्म १, २, ३ → कॉलेज सीट स्वीकृती व प्रवेश.",
+            tags = listOf("Engineering Admission", "MHT-CET 2026", "CAP Round", "B.Tech Admission")
+        ),
+        OpportunityItem(
+            id = "adm_neet_state_med",
+            title = "Maharashtra State NEET-UG Medical Counselling 2026 (MBBS/BDS/BAMS)",
+            titleMr = "महाराष्ट्र राज्य वैद्यकीय पदवी समुपदेशन २०२६ (MBBS / BDS / BAMS / BHMS)",
+            category = OpportunityCategory.ADMISSION,
+            subCategory = "Medical Admission",
+            description = "State quota (85%) counseling for MBBS, BDS, BAMS, BHMS, BUMS, BPT, and Allied Health Sciences in Maharashtra medical colleges.",
+            descriptionMr = "महाराष्ट्रातील शासकीय व खाजगी वैद्यकीय महाविद्यालयांमधील ८५% राज्य कोट्यातील जागांसाठी राज्य सामाईक प्रवेश परीक्षा कक्षाची अधिकृत प्रक्रिया.",
+            qualification = "12th Science (PCB) + NEET-UG 2026 Qualified",
+            qualificationMr = "१२ वी सायन्स (PCB) + NEET-UG पात्रता",
+            eligibility = "Qualified NEET-UG cut-off percentile. Maharashtra state domicile.",
+            eligibilityMr = "NEET-UG कटऑफ पर्सेंटाईल व महाराष्ट्र अधिवास दाखला (Domicile).",
+            officialUrl = "https://cetcell.mahacet.org/",
+            status = OpportunityStatus.NEW,
+            tags = listOf("NEET Admission", "Medical Counselling", "MBBS 2026", "BAMS", "State Quota")
+        ),
+        OpportunityItem(
+            id = "adm_mcaer_agri",
+            title = "MCAER Maharashtra Agriculture Degree Admissions 2026-27",
+            titleMr = "महाराष्ट्र कृषी पदवी केंद्रीभूत प्रवेश प्रक्रिया २०२६-२७ (MCAER / CET Cell)",
+            category = OpportunityCategory.ADMISSION,
+            subCategory = "Agriculture Admission",
+            description = "Centralized counseling for B.Sc. Agriculture, Horticulture, Forestry, Food Technology, and Agri Engineering across 4 state agriculture universities.",
+            descriptionMr = "राहुरी, अकोला, परभणी आणि दापोली कृषी विद्यापीठांमधील सर्व पदवी अभ्यासक्रमांसाठी सामाईक प्रवेश प्रक्रिया. शेतकरी पाल्यांना १२ अतिरिक्त गुण.",
+            qualification = "12th Science with MHT-CET (PCB/PCM)",
+            qualificationMr = "१२ वी सायन्स + MHT-CET परीक्षा",
+            eligibility = "Passed 12th Science. Landholder certificate for farmer quota weightage.",
+            eligibilityMr = "७/१२ शेतकरी दाखला, कृषी विषयक प्रमाणपत्रे जोडल्यास अतिरिक्त वेटेज.",
+            officialUrl = "https://cetcell.mahacet.org/",
+            status = OpportunityStatus.NEW,
+            tags = listOf("MCAER", "Agri Admission", "B.Sc Agri 2026", "MPKV", "Farmer Quota")
+        ),
+        OpportunityItem(
+            id = "adm_law_cet_cap",
+            title = "MAH-LL.B. 5-Year & 3-Year Centralized Admission Process 2026",
+            titleMr = "महाराष्ट्र विधी (Law LL.B.) ऑनलाईन केंद्रीय प्रवेश प्रक्रिया २०२६",
+            category = OpportunityCategory.ADMISSION,
+            subCategory = "Professional Admission",
+            description = "Centralized admission for 5-Year Integrated B.A. LL.B. after 12th and 3-Year LL.B. after Graduation across Maharashtra law colleges.",
+            descriptionMr = "१२ वी नंतर ५ वर्षांचा B.A. LL.B. आणि पदवीनंतर ३ वर्षांचा LL.B. अभ्यासक्रमासाठी राज्यस्तरीय कॅप प्रवेश प्रक्रिया.",
+            qualification = "12th Pass (5-yr) OR Any Graduate (3-yr) with MAH-LL.B. CET",
+            qualificationMr = "१२ वी उत्तीर्ण (५ वर्षे) किंवा पदवीधर (३ वर्षे) + विधी प्रवेश परीक्षा",
+            eligibility = "Minimum 45% marks in qualifying exam.",
+            eligibilityMr = "किमान ४५% गुण (राखीव वर्गासाठी ४०%).",
+            officialUrl = "https://cetcell.mahacet.org/",
+            status = OpportunityStatus.ACTIVE,
+            tags = listOf("Law Admission", "LLB 2026", "GLC Mumbai", "ILS Pune", "Law CET")
+        )
+    )
+}

@@ -1,0 +1,6 @@
+{
+  "name": "शिक्षण करिअर",
+  "description": "१० वी नंतर योग्य शिक्षण, करिअर, नोकरी, प्रवेश आणि संधी शोधण्यासाठी सर्वसमावेशक मार्गदर्शक",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
